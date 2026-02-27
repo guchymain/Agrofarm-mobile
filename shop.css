@@ -63,7 +63,7 @@ body {
 
 }
 
-.buy{
+.buy button {
   /* flex:1; */
   padding:12px;
   border:none;
@@ -75,7 +75,7 @@ body {
   cursor:pointer;
 }
 
-.cart{
+.cart button {
   /* flex:1; */
   padding:12px;
   border:none;
