@@ -224,7 +224,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.page5butt {
+.page5butt button {
     padding: 14px 37px;
     border-radius: 25px;
     border: none;
