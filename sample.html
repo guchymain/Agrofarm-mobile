@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fertilizer Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#d9dfdc;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:360px;
+    min-height:100vh;
+    background:#cfd6d3;
+}
+
+/* Hero Section */
+.hero{
+    height:180px;
+    background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.3);
+}
+
+.hero h1{
+    position:relative;
+    color:#000;
+    font-size:32px;
+    font-weight:700;
+    z-index:1;
+    color:white;
+}
+
+/* Top Labels */
+.top-controls{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+}
+
+.crop-label{
+    background:#9cff00;
+    padding:8px 25px;
+    font-weight:600;
+    border:2px solid #333;
+}
+
+.week-label{
+    background:#7c97d8;
+    padding:8px 15px;
+    font-size:14px;
+    border:2px solid #333;
+}
+
+/* Info Card */
+.card{
+    margin:10px 20px;
+    background:#e2b74f;
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.2);
+}
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.card img{
+    width:60px;
+}
+
+.card p{
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.card strong{
+    font-weight:600;
+}
+
+.apply{
+    margin-top:10px;
+    font-size:13px;
+}
+
+.inquiry-btn{
+    margin-top:15px;
+    background:#f1f1f1;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+/* Bottom Buttons */
+.bottom-buttons{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.prev-btn{
+    background:#f08c8c;
+    padding:10px 18px;
+    border-radius:10px;
+    border:2px solid #333;
+    cursor:pointer;
+}
+
+.next-btn{
+    background:#3ddc66;
+    padding:10px 18px;
+    border-radius:10px;
+    border:2px solid #333;
+    cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Fertilizer Guide</h1>
+    </div>
+
+    <!-- Labels -->
+    <div class="top-controls">
+        <div class="crop-label">Coconut</div>
+        <div class="week-label">Week - 4</div>
+    </div>
+
+    <!-- Info Card -->
+    <div class="card">
+
+        <div class="card-header">
+            <div>
+                <p><strong>Fertilizer Category</strong> : Coconut APM (D)</p>
+                <p><strong>Ratio</strong> : 12 : 06 : 32</p>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2909/2909762.png" alt="Fertilizer">
+        </div>
+
+        <div class="apply">
+            <p><strong>How to Apply :-</strong></p>
+            <p>1. Fertilizer should be applied in a circular pattern, 1 foot away from the base of the plant in the first 1 – 1½ years.</p>
+            <p>2. Distance of application from the base of the tree should gradually increase with growth.</p>
+        </div>
+
+        <button class="inquiry-btn">Write Inquiry ✈</button>
+
+    </div>
+
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <div class="prev-btn">⏪ Previous Week</div>
+        <div class="next-btn">Next Week ⏩</div>
+    </div>
+
+</div>
+
+</body>
+</html>
